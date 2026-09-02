@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="logo-box">
+                <img src="logo.png" alt="โลโก้โรงเรียน" id="school-logo">
+            </div>
+            <h1 class="school-title">วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</h1>
+        </div>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active" id="menu-home" data-target="home-section">หน้าหลัก</a></li>
+                <li><a href="#" class="nav-link" id="menu-executives"
+                        data-target="executives-section">ข้อมูลผู้บริหาร</a></li>
+                <li><a href="#" class="nav-link" data-target="staff-section">ข้อมูลบุคลากร</a></li>
+                <li><a href="#" class="nav-link" data-target="student-section">ข้อมูลนักเรียน/นักศึกษา</a></li>
+                <li><a href="#" class="nav-link" data-target="courses-section">ข้อมูลสาขาวิชาที่เปิดสอน</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section id="home-section" class="page-section active">
+            <div class="slider-container">
+                <div class="slider-track" id="slider-track">
+                    <div class="slide"><img src="banner_news1.jpg" alt="ภาพข่าวประชาสัมพันธ์ 1"></div>
+                    <div class="slide"><img src="banner_news2.jpg" alt="ภาพข่าวประชาสัมพันธ์ 2"></div>
+                    <div class="slide"><img src="banner_news3.jpg" alt="ภาพข่าวประชาสัมพันธ์ 3"></div>
+                </div>
+
+                <button class="slider-btn prev-btn" id="prev-btn">&#10094;</button>
+                <button class="slider-btn next-btn" id="next-btn">&#10095;</button>
+
+                <div class="slider-dots" id="slider-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: ผู้บริหาร -->
+        <section id="executives-section" class="page-section">
+            <div class="exec-card-container">
+                <button class="back-home-btn" id="back-home-btn">
+                    <span>&#10094;</span> กลับสู่หน้าหลัก
+                </button>
+
+                <div class="exec-stage">
+                    <div class="exec-info-box" id="exec-info-box">
+                        <h2 class="exec-name" id="exec-name">นายสมมิทธิ์ ทิพยมณฑล</h2>
+                        <div class="exec-badge">
+                            <span class="exec-role" id="exec-role">ผู้รับใบอนุญาตและผู้จัดการ</span>
+                        </div>
+                    </div>
+
+                    <button class="exec-nav-btn exec-prev" id="exec-prev-btn">&#10094;</button>
+                    <button class="exec-nav-btn exec-next" id="exec-next-btn">&#10095;</button>
+                    <div class="exec-character-wrapper" id="exec-character-wrapper"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: ข้อมูลบุคลากร -->
+        <section id="staff-section" class="page-section">
+            <div class="staff-card-container">
+                <div class="staff-header-bar">
+                    <button class="back-home-btn" id="staff-back-home-btn">
+                        <span>&#10094;</span> กลับสู่หน้าหลัก
+                    </button>
+                    <div class="staff-controls">
+                        <input type="text" id="staff-search-input" placeholder="ค้นหาชื่อ หรือตำแหน่งบุคลากร...">
+                        <select id="staff-dept-filter" class="staff-select-filter">
+                            <option value="all">ทุกแผนกวิชา</option>
+                            <option value="เทคนิคเครื่องกล">เทคนิคเครื่องกล</option>
+                            <option value="ไฟฟ้าและอิเล็กทรอนิกส์">ไฟฟ้าและอิเล็กทรอนิกส์</option>
+                            <option value="เทคโนโลยีสารสนเทศ">เทคโนโลยีสารสนเทศ</option>
+                            <option value="บริหารธุรกิจ">บริหารธุรกิจ</option>
+                            <option value="การท่องเที่ยวและการโรงแรม">การท่องเที่ยวและการโรงแรม</option>
+                            <option value="ก่อสร้างและสถาปัตยกรรม">ก่อสร้างและสถาปัตยกรรม</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="staff-stage">
+                    <div class="staff-info-box" id="staff-info-box">
+                        <h2 class="staff-name" id="staff-name">นายภราดร ทองศิริ</h2>
+                        <div class="staff-badge">
+                            <span class="staff-role" id="staff-role">หัวหน้าสาขาวิชาเทคนิคเครื่องกล</span>
+                        </div>
+                        <p class="staff-dept-text" id="staff-dept">ช่างยนต์</p>
+                    </div>
+                    <button class="staff-nav-btn staff-prev" id="staff-prev-btn">&#10094;</button>
+                    <button class="staff-nav-btn staff-next" id="staff-next-btn">&#10095;</button>
+                    <div class="staff-character-wrapper" id="staff-character-wrapper"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: ข้อมูลนักเรียน/นักศึกษา -->
+        <section id="student-section" class="page-section">
+            <div class="student-card-container">
+                <div class="student-header-bar">
+                    <button class="back-home-btn" id="student-back-home-btn">
+                        <span>&#10094;</span> กลับสู่หน้าหลัก
+                    </button>
+                    <div class="student-controls">
+                        <input type="text" id="student-search-input"
+                            placeholder="ค้นหาชื่อ, รหัสนักศึกษา หรือสาขาวิชา...">
+                        <select id="student-level-filter" class="student-select-filter">
+                            <option value="all">ทุกระดับชั้น</option>
+                            <option value="ปวช.">ปวช. (ประกาศนียบัตรวิชาชีพ)</option>
+                            <option value="ปวส.">ปวส. (ประกาศนียบัตรวิชาชีพชั้นสูง)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="student-stats-grid">
+                    <div class="stat-card">
+                        <h4>นักศึกษาทั้งหมด</h4>
+                        <span class="stat-number">3,850</span>
+                        <span class="stat-unit">คน</span>
+                    </div>
+                    <div class="stat-card">
+                        <h4>ระดับชั้น ปวช.</h4>
+                        <span class="stat-number">2,100</span>
+                        <span class="stat-unit">คน</span>
+                    </div>
+                    <div class="stat-card">
+                        <h4>ระดับชั้น ปวส.</h4>
+                        <span class="stat-number">1,750</span>
+                        <span class="stat-unit">คน</span>
+                    </div>
+                </div>
+
+                <div class="student-grid" id="student-grid"></div>
+            </div>
+        </section>
+
+        <!-- ปุ่มเลื่อนบุคลากร ซ้าย - ขวา -->
+        <button class="staff-nav-btn staff-prev" id="staff-prev-btn">&#10094;</button>
+        <button class="staff-nav-btn staff-next" id="staff-next-btn">&#10095;</button>
+
+        <!-- รายการตัวละคร/การ์ดบุคลากร -->
+        <div class="staff-character-wrapper" id="staff-character-wrapper"></div>
+        </div>
+
+        <!-- Section: ข้อมูลนักเรียน/นักศึกษา (Student Section) -->
+        <section id="student-section" class="page-section">
+            <div class="student-card-container">
+
+                <div class="student-header-bar">
+                    <button class="back-home-btn" id="student-back-home-btn">
+                        <span>&#10094;</span> กลับสู่หน้าหลัก
+                    </button>
+
+                    <!-- เครื่องมือค้นหาและตัวกรองระดับชั้น -->
+                    <div class="student-controls">
+                        <div class="student-search-box">
+                            <input type="text" id="student-search-input"
+                                placeholder="ค้นหาชื่อ, รหัสนักศึกษา หรือสาขาวิชา...">
+                        </div>
+                        <select id="student-level-filter" class="student-select-filter">
+                            <option value="all">ทุกระดับชั้น</option>
+                            <option value="ปวช.">ปวช. (ประกาศนียบัตรวิชาชีพ)</option>
+                            <option value="ปวส.">ปวส. (ประกาศนียบัตรวิชาชีพชั้นสูง)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- การ์ดสรุปสถิตินักศึกษา (Summary Stats) -->
+                <div class="student-stats-grid">
+                    <div class="stat-card">
+                        <h4>นักศึกษาทั้งหมด</h4>
+                        <span class="stat-number">3,850</span>
+                        <span class="stat-unit">คน</span>
+                    </div>
+                    <div class="stat-card">
+                        <h4>ระดับชั้น ปวช.</h4>
+                        <span class="stat-number">2,100</span>
+                        <span class="stat-unit">คน</span>
+                    </div>
+                    <div class="stat-card">
+                        <h4>ระดับชั้น ปวส.</h4>
+                        <span class="stat-number">1,750</span>
+                        <span class="stat-unit">คน</span>
+                    </div>
+                </div>
+
+                <!-- แสดงรายการนักศึกษาแบบ Grid Cards -->
+                <div class="student-grid" id="student-grid"></div>
+
+            </div>
+        </section>
+        </div>
+        </section>
+
+        <!-- Section: สาขาวิชาที่เปิดสอน -->
+        <section id="courses-section" class="page-section">
+            <div class="courses-card-container">
+                <div class="courses-header-bar">
+                    <button class="back-home-btn" id="courses-back-home-btn">
+                        <span>&#10094;</span> กลับสู่หน้าหลัก
+                    </button>
+                    <div class="courses-controls">
+                        <input type="text" id="course-search-input" placeholder="ค้นหาชื่อสาขาวิชา...">
+                        <select id="course-level-filter" class="courses-select-filter">
+                            <option value="all">ทุกระดับชั้น</option>
+                            <option value="ปวช.">ปวช.</option>
+                            <option value="ปวส.">ปวส.</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="courses-grid" id="courses-grid">
+                    <!-- ข้อมูลสาขาวิชาจะถูกเรนเดอร์ผ่าน JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
